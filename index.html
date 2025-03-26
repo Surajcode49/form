@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyVerse Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header class="header">
+        <img src="./src/logo.png" alt="PyVerse Logo" class="logo">
+    </header>
+
+    <!-- Form Container -->
+    <div class="container">
+        <form id="admissionForm">
+         
+        <h2>PyVerse Admission Form</h2>
+       
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="fatherContact">Father's Contact Number:</label>
+            <input type="tel" id="fatherContact" name="fatherContact" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="school">School/College Name:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label>Choose Your Subjects:</label>
+            <div class="subjects">
+                <label><input type="checkbox" name="subjects" value="Math"> Math</label>
+                <label><input type="checkbox" name="subjects" value="PCB"> Physics, Chemistry & Biology</label>
+                <label><input type="checkbox" name="subjects" value="AI and ML"> AI and ML</label>
+                <label><input type="checkbox" name="subjects" value="Python"> Python</label>
+            </div>
+
+            <label for="goal">Future Goal?</label>
+            <textarea id="goal" name="goal" rows="2"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- Footer with Address & Contact -->
+    <footer class="footer">
+        <p>📍 Address: Debibari, Coochbehar, near Epic Public School</p>
+        <p>📞 Contact: +91 9641120205, 8637810559</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
