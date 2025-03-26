@@ -14,7 +14,7 @@ document.getElementById("admissionForm").addEventListener("submit", function(eve
         goal: document.getElementById("goal").value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbw0tWMVSoO44F1wUg3D0sAXjqRKlYd9Df8IwDiVfoLX5vIBgbpvN7EOuzTm3bkds7NA/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwKdStNQTm59lbJ9qoZYVySYLPjWGKJX76iGRZaxKqd5LKQX8CE-pixDer6WH3K0U0/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
